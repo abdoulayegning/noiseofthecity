@@ -1,18 +1,16 @@
 <template>
   <div class="wrapper"> 
     <div id="logo"><img src="../assets/logo.png" alt=""></div>
-    <div id="info">
-      <div id="cover"><img src="../assets/1-.png" alt=""></div>
-      <div id="order">{{msg}}</div>
-      <div id="title">Lorem ipsum dolor</div>
+    <div v-if="response" id="info">
+      <div id="cover"><img :src="response.cover" alt=""></div>
+      <div id="order">{{response.trackId}}</div>
+      <div id="title">{{response.title}}</div>
       <div id="description">
-        Fa sa mbëgeel nek, sa cofeel fees fa dell, foofee, moy sa dëkkuway.<br> 
-                Là où il y a de l'amour, là où il y a du plaisir, c'est là qu'est la patrie.<br> 
-                Where love is, where there is delight, that is where the homeland is.<br>
+        {{response.story}}
       </div>
     </div>
     <div id="player">
-      <button>Play</button><button>Stop</button>
+      <button ref="play">Play</button><button ref="stop">Stop</button>
     </div>
   </div>
 </template>
@@ -95,13 +93,121 @@
 }
 </style>
 
-<script>
+<script> 
+import Track from '../Track.js'
+//covers
+import cover1 from '../assets/covers/1-.png'
+import cover2 from '../assets/covers/2-.png'
+import cover3 from '../assets/covers/3-.png'
+import cover4 from '../assets/covers/4-.png'
+import cover5 from '../assets/covers/5-.jpg'
+import cover6 from '../assets/covers/6-.jpg'
+import cover7 from '../assets/covers/7-.png'
+import cover8 from '../assets/covers/8-.png'
+import cover9 from '../assets/covers/9-.png' 
+//mp3's
+import track1 from '../assets/music/1.mp3'
+import track2 from '../assets/music/2.mp3'
+import track3 from '../assets/music/3.mp3'
+import track4 from '../assets/music/4.mp3'
+import track5 from '../assets/music/5.mp3'
+import track6 from '../assets/music/6.mp3'
+import track7 from '../assets/music/7.mp3'
+import track8 from '../assets/music/8.mp3'
+import track9 from '../assets/music/9.mp3'
+ 
 export default {
   name: 'Track',
   data(){
       return {
-          msg: this.$route.params.track
+          track: this.$route.params.track,
+          response: null,
+          info: [
+                  {
+                    trackId: 1,
+                    title: "Mbott yi",
+                    story: ``,
+                    cover: cover1,
+                    track: track1
+                  },
+                  {
+                    trackId: 2,
+                    title: "ndawrabine",
+                    story: ``,
+                    cover: cover2,
+                    track: track2
+                  },
+                  {
+                    trackId: 3,
+                    title: "assiko",
+                    story: ``,
+                    cover: cover3,
+                    track: track3
+                  },
+                  {
+                    trackId: 4,
+                    title: "baye world",
+                    story: ``,
+                    cover: cover4,
+                    track: track4
+                  },
+                  {
+                    trackId: 5,
+                    title: "duket",
+                    story: ``,
+                    cover: cover5,
+                    track: track5
+                  },
+                  {
+                    trackId: 6,
+                    title: "nawetaan",
+                    story: ``,
+                    cover: cover6,
+                    track: track6
+                  },
+                  {
+                    trackId: 7,
+                    title: "aissatou",
+                    story: ``,
+                    cover: cover7,
+                    track: track7
+                  },
+                  {
+                    trackId: 8,
+                    title: "gainde",
+                    story: ``,
+                    cover: cover8,
+                    track: track8
+                  },
+                  {
+                    trackId: 9,
+                    title: "puulo",
+                    story: ``,
+                    cover: cover9,
+                    track: track9
+                  }, 
+                ]
       }
+  },
+  mounted(){  
+    this.info.forEach(i => {
+      if (i.trackId == this.$route.params.track) {
+        this.response = i
+        console.log(i)
+        let sound = new Track(i.track)
+        this.$refs.play.addEventListener('click', ()=>{
+          sound.play()
+          console.log("Playing")
+        })
+
+        this.$refs.stop.addEventListener('click', ()=>{
+          sound.stop()
+          console.log("Stop")
+        })
+      }
+    });
+
+
   } 
 }
 </script>
