@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Stopwatch';
+    src: url('StopwatchRegular.eot');
+    src: url('StopwatchRegular.eot?#iefix') format('embedded-opentype'),
+        url('StopwatchRegular.woff2') format('woff2'),
+        url('StopwatchRegular.woff') format('woff'),
+        url('StopwatchRegular.ttf') format('truetype'),
+        url('StopwatchRegular.svg#StopwatchRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
