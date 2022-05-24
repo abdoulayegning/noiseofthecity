@@ -5,8 +5,7 @@
       <div id="cover"><img :src="response.cover" alt=""></div>
       <div id="order">{{response.trackId}}</div>
       <div id="title">{{response.title}}</div>
-      <div id="description">
-        {{response.story}}
+      <div v-html="response.story" id="description"> 
       </div>
     </div>
     <div id="player">
