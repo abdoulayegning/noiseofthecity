@@ -126,63 +126,90 @@ export default {
                   {
                     trackId: 1,
                     title: "Mbott yi",
-                    story: ``,
+                    story: `
+            Bu nawett jotee, mbot mu bayyi ngoox ngoox, ya rey sa bopp.<br>
+            Pendant la saison des pluies, toute grenouille qui ne "coasserait" pas se tuerait.<br>
+            During the rainy season, any frog that does not croak kills itself.`,
                     cover: cover1,
                     track: track1
                   },
                   {
                     trackId: 2,
                     title: "ndawrabine",
-                    story: ``,
+                    story: `Pecc wu nekk, am na aw melokaan buy dundël taalif wi ci nekk.<br>
+                Toute danse détient une forme qui révèle sa poésie.<br>
+                Every dance has a form that reveals its poetry.<br>`,
                     cover: cover2,
                     track: track2
                   },
                   {
                     trackId: 3,
                     title: "assiko",
-                    story: ``,
+                    story: `Way wo gis, amna cafka, amna taariq.<br>
+Chaque musique éveille un caractère et suggère une histoire.<br>
+Each music awakens a character and suggests a story.<br>`,
                     cover: cover3,
                     track: track3
                   },
                   {
                     trackId: 4,
                     title: "baye world",
-                    story: ``,
+                    story: `Fees dell ci xol yi, lammiñ yi seede ko.<br>
+                Quand le cœur s'affirme à travers les mots.<br>
+                When the heart asserts itself through words.<br> `,
                     cover: cover4,
                     track: track4
                   },
                   {
                     trackId: 5,
                     title: "duket",
-                    story: ``,
+                    story: `
+                    Bu xol seddee, jem ji seede ko.<br>
+                    Quand le cœur y est, le corps s'y prête.<br>
+                    When the heart is in it, the body lends itself to it.<br>
+                    `,
                     cover: cover5,
                     track: track5
                   },
                   {
                     trackId: 6,
                     title: "nawetaan",
-                    story: ``,
+                    story: `
+                    Pass pas ak bëg bëg, na ñu feeñ du né ci lu nekk.<br>
+                    La passion et l'amour transcendent les frontières et unissent les cœurs.<br>
+                    Passion and love transcend borders and unite hearts.<br>
+                    `,
                     cover: cover6,
                     track: track6
                   },
                   {
                     trackId: 7,
                     title: "aissatou",
-                    story: ``,
+                    story: `
+                    Dëgg dëgg i taar fesul, dafa dëggu.<br>
+                    La vraie beauté est invisible, elle est réelle.<br>
+                    True beauty is invisible, it is real.<br>
+                    `,
                     cover: cover7,
                     track: track7
                   },
                   {
                     trackId: 8,
                     title: "gainde",
-                    story: ``,
+                    story: `Fa sa mbëgeel nek, sa cofeel fees fa dell, foofee, moy sa dëkkuway.<br> 
+                Là où il y a de l'amour, là où il y a du plaisir, c'est là qu'est la patrie.<br> 
+                Where love is, where there is delight, that is where the homeland is.<br>`,
                     cover: cover8,
                     track: track8
                   },
                   {
                     trackId: 9,
                     title: "puulo",
-                    story: ``,
+                    story: `
+                    Ngelow liy woy ci xol Yi tax, Ku weet xam sa bopp.<br>
+                    La musique du vent dans les coeurs, la révélation de chacun.<br>
+                    The music of the wind in our hearts, the revelation of each one.<br>
+                    `,
                     cover: cover9,
                     track: track9
                   }, 
